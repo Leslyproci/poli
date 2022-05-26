@@ -687,7 +687,7 @@ view: fact_matriculados {
     sql: ${TABLE}.TIPOADMISION ;;
   }
 
-  dimension: valor_pago_detalle {
+  measure: valor_pago_detalle {
     type: number
     sql: ${TABLE}.VALOR_PAGO_DETALLE ;;
   }
@@ -697,9 +697,4 @@ view: fact_matriculados {
     drill_fields: []
   }
 
-  measure: ingreso_por_facultad {
-   type:sum
-   sql_distinct_key: ${programa_nombre_facultad}
-   sql: ${valor_pago_detalle};;
-  }
 }
