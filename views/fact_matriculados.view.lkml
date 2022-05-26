@@ -688,7 +688,7 @@ view: fact_matriculados {
   }
 
   measure: valor_pago_detalle {
-    type: number
+    type: sum
     sql: ${TABLE}.VALOR_PAGO_DETALLE ;;
   }
 
@@ -696,5 +696,6 @@ view: fact_matriculados {
     type: count
     drill_fields: []
   }
+
 
 }
