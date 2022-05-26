@@ -698,8 +698,8 @@ view: fact_matriculados {
   }
   measure: ingreso_por_facultad {
     type: sum_distinct
-    sql_distinct_key: ${programa_nombre_facultad}
-      sql: ${valor_pago_detalle};;
+    sql_distinct_key: ${programa_nombre_facultad};;
+    sql: ${valor_pago_detalle};;
   }
 
 }
