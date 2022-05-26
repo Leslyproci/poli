@@ -353,7 +353,7 @@ view: fact_matriculados {
   }
 
   dimension: periodo_anio {
-    type: date_year
+    type: number
     sql: ${TABLE}.Periodo_Anio ;;
   }
 
