@@ -699,7 +699,7 @@ view: fact_matriculados {
 
   measure: ingreso_por_facultad {
     type: sum
-    sql: ${valor_pago_detalle};;
+    sql: CAST(${valor_pago_detalle} AS FLOAT64);;
   }
 
 }
