@@ -696,4 +696,10 @@ view: fact_matriculados {
     type: count
     drill_fields: []
   }
+
+  measure: ingreso_por_facultad {
+   type:sum
+   sql_distinct_key: ${programa_nombre_facultad}
+   sql: ${valor_pago_detalle};;
+  }
 }
