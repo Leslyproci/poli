@@ -687,8 +687,8 @@ view: fact_matriculados {
     sql: ${TABLE}.TIPOADMISION ;;
   }
 
-  measure: valor_pago_detalle {
-    type: sum
+  dimension: valor_pago_detalle {
+    type: number
     sql: ${TABLE}.VALOR_PAGO_DETALLE ;;
   }
 
