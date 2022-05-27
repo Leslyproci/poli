@@ -354,7 +354,7 @@ view: fact_matriculados {
 
   dimension: periodo_anio {
     type: number
-    sql: ${TABLE}.Periodo_Anio ;;
+    sql: CAST(${TABLE}.Periodo_Anio AS FLOAT64) ;;
   }
 
   dimension: periodo_cargo {

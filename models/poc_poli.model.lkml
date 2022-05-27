@@ -2,6 +2,7 @@ connection: "looker_tabla_poli"
 
 # include all the views
 include: "/views/**/*.view"
+include: "/dashboard/poli-poc.dashboard.lookml"
 
 datagroup: poc_poli_default_datagroup {
   # sql_trigger: SELECT MAX(id) FROM etl_log;;
