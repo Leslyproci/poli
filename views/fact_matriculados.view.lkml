@@ -697,18 +697,13 @@ view: fact_matriculados {
     drill_fields: []
   }
 
-  measure: sum {
-    type: sum
-    drill_fields: []
-  }
-
-  measure: max {
-    type: max
-    drill_fields: []
-  }
   measure: ingreso_por_facultad {
     type: sum
     sql: CAST(${valor_pago_detalle} AS FLOAT64);;
   }
-
+  dimension: looker_image {
+    type: string
+    sql: ${TABLE}.homepage_url;;
+    html: <img src="https://upload.wikimedia.org/wikipedia/commons/7/76/Logo_del_Polit%C3%A9cnico_Grancolombiano.svg" /> ;;
+  }
 }
