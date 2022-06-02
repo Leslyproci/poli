@@ -701,9 +701,5 @@ view: fact_matriculados {
     type: sum
     sql: CAST(${valor_pago_detalle} AS FLOAT64);;
   }
-  dimension: looker_image {
-    type: string
-    sql: ${TABLE}.homepage_url;;
-    html: <img src="<img src="https://www.mydomain.com/images/myimage1" /> ;;
-  }
+
 }
