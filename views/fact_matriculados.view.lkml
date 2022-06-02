@@ -353,8 +353,8 @@ view: fact_matriculados {
   }
 
   dimension: periodo_anio {
-    type: string
-    sql: ${TABLE}.Periodo_Anio ;;
+    type: number
+    sql: CAST(${TABLE}.Periodo_Anio AS FLOAT64) ;;
   }
 
   dimension: periodo_cargo {
@@ -688,7 +688,7 @@ view: fact_matriculados {
   }
 
   dimension: valor_pago_detalle {
-    type: string
+    type: number
     sql: ${TABLE}.VALOR_PAGO_DETALLE ;;
   }
 
@@ -696,4 +696,10 @@ view: fact_matriculados {
     type: count
     drill_fields: []
   }
+
+  measure: ingreso_por_facultad {
+    type: sum
+    sql: CAST(${valor_pago_detalle} AS FLOAT64);;
+  }
+
 }
