@@ -704,7 +704,7 @@ view: fact_matriculados {
 
   dimension: logo {
     type: string
-    sql: ${TABLE}.logo ;;
+    sql: ${TABLE}.homepage_url ;;
     html:
         <img src="https://www.aparcar.com.co/sites/default/files/politecnico%20-%20copia_0.png" height="250" width="300">
         ;;
