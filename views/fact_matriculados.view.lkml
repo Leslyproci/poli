@@ -705,7 +705,7 @@ view: fact_matriculados {
   dimension: looker_image {
     type: string
     sql: ${TABLE}.temp;;
-    html: <img src="https://www.aparcar.com.co/sites/default/files/politecnico%20-%20copia_0.png" /> ;;
+    html: <img src="https://www.aparcar.com.co/sites/default/files/politecnico%20-%20copia_0.png" height="250" width="300" /> ;;
   }
 
 }
