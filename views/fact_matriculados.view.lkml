@@ -702,11 +702,10 @@ view: fact_matriculados {
     sql: CAST(${valor_pago_detalle} AS FLOAT64);;
   }
 
-  dimension: logo {
+  dimension: looker_image {
     type: string
-    sql: ${TABLE}.homepage_url ;;
-    html:
-        <img src="https://www.aparcar.com.co/sites/default/files/politecnico%20-%20copia_0.png" height="250" width="300">
-        ;;
+    sql: ${TABLE}.temp;;
+    html: <img src="https://www.aparcar.com.co/sites/default/files/politecnico%20-%20copia_0.png" /> ;;
   }
+
 }
