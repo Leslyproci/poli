@@ -702,4 +702,15 @@ view: fact_matriculados {
     sql: CAST(${valor_pago_detalle} AS FLOAT64);;
   }
 
+  dimension: brand {
+    type: string
+    sql: ${TABLE}.brand ;;
+  }
+  dimension: brand_logo {
+    type: string
+    sql: ${brand} ;;
+    html:
+        <img src="https://icon-library.net/images/no-image-available-icon/no-image-available-icon-6.jpg" height="250" width="300">
+        ;;
+  }
 }
