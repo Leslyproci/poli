@@ -705,7 +705,7 @@ view: fact_matriculados {
   dimension: looker_image {
     type: string
     sql: ${TABLE}.temp;;
-    html: <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Logo_del_Polit%C3%A9cnico_Grancolombiano.svg/1200px-Logo_del_Polit%C3%A9cnico_Grancolombiano.svg.png" height="115" width="125" /> ;;
+    html: <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Logo_del_Polit%C3%A9cnico_Grancolombiano.svg/1200px-Logo_del_Polit%C3%A9cnico_Grancolombiano.svg.png" height="95" width="125" /> ;;
   }
 
 }
