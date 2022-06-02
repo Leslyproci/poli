@@ -706,7 +706,7 @@ view: fact_matriculados {
     type: string
     sql: ${TABLE}.logo ;;
     html:
-        <img src="https://icon-library.net/images/no-image-available-icon/no-image-available-icon-6.jpg" height="250" width="300">
+        <img src="https://www.aparcar.com.co/sites/default/files/politecnico%20-%20copia_0.png" height="250" width="300">
         ;;
   }
 }
