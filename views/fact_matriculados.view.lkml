@@ -317,10 +317,6 @@ view: fact_matriculados {
     sql: ${TABLE}.IDENTIFICACION ;;
   }
 
-  dimension: item1 {
-    type: string
-    sql: ${TABLE}.item1 ;;
-  }
 
   dimension: max_fecha_efectiva_pago {
     type: string
@@ -350,11 +346,13 @@ view: fact_matriculados {
   dimension: periodo_anho {
     type: string
     sql: ${TABLE}.PERIODO_ANHO ;;
+    value_format: "###0"
   }
 
   dimension: periodo_anio {
     type: number
     sql: CAST(${TABLE}.Periodo_Anio AS FLOAT64) ;;
+    value_format: "###0"
   }
 
   dimension: periodo_cargo {
