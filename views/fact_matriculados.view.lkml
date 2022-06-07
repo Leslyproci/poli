@@ -350,6 +350,7 @@ view: fact_matriculados {
   }
 
   dimension: periodo_anio {
+    label: "año"
     type: number
     sql: CAST(${TABLE}.Periodo_Anio AS FLOAT64) ;;
     value_format: "###0"
