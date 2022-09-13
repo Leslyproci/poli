@@ -11,9 +11,4 @@ datagroup: poc_poli_default_datagroup {
 
 persist_with: poc_poli_default_datagroup
 
-explore: fact_matriculados {
-  access_filter: {
-    field: genero
-    user_attribute: atributo_preuba
-  }
-}
+explore: fact_matriculados {}
