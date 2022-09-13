@@ -11,4 +11,10 @@ datagroup: poc_poli_default_datagroup {
 
 persist_with: poc_poli_default_datagroup
 
-explore: fact_matriculados {}
+explore: fact_matriculados {
+  view_name: fact_matriculados
+  access_filter: {
+    field: cod_programa
+    user_attribute: atributo_preuba
+  }
+}
